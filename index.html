@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Garra de la Suerte</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <main>
+
+    <header></header>
+
+        <article id="addMartian">
+        </article>
+
+        <section id="buttons">
+            <button class= "buttonsBar" id="btPlay" onclick="audio.play();">PLAY</button>
+            <script type="text/javascript">
+                const audio =new Audio();
+                audio.src="./Archivos/ELEGIDO.MPEG";
+                </script>
+            <!-- <button class= "buttonsBar" id="btPlay" onclick="audio.play();">PLAY</button> -->
+            <button class= "buttonsBar" id="btAdd" onClick="add()">
+                <img src="./Archivos/Marcianitas/Marciano1.png" width="20px" height="22px"> +</button>
+            <button class= "buttonsBar" id="btAgain" onClick="reset()">RESET</button>
+        </section>
+
+    </main>
+    <footer><h1>La Garra de la Suerte</h1></footer>
+    <script src="play.js"></script>
+
+</body>
+</html>

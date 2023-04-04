@@ -1,0 +1,125 @@
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Archivos//fondopizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.30fr 0.70fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  color: white;
+  font-size: 3.125rem;
+  text-align: center;
+  -webkit-text-stroke: .1875rem black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+  #buttons {
+    display: flex;
+    justify-content: space-around;
+
+
+  }
+
+
+.buttonsBar {
+    background-color: rgba(11, 119, 41, 0.48);
+    height: 1.6875rem;
+    width: 7rem;
+    border: top width 1px;
+    border-color: white;
+    border-radius: 0.625rem;
+    color: white;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.099);
+    border-radius: 0.625rem;
+    align-content: space-around;
+
+}
+
+article div{
+  height: 6rem;
+  width: 7rem;
+  color: white;
+  justify-content: center;
+}
+
+header {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#newPlayer {
+  background-image: url(Archivos/marcianitas/Marciano1.png);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  background-position: bottom left;
+}
+
+#newPlayer p {
+ height: fit-content;
+ margin:0%;
+ padding-top: .9375rem;
+
+}
+
+#ganador {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-justify: auto;
+  background-image: url(Archivos/garras/LA\ GARRA\ TE\ HA\ ELEGIDO\ 5.png);
+  background-repeat: no-repeat;
+}
+
+#ganador h1{
+  height:fit-content;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 64rem;
+    background-size: cover;
+  }
+
+  main {
+    height: 70%;
+    grid-template-rows: min-content;
+
+  }
+
+  footer {
+    height: 30%;
+  }
+
+  footer h1{
+    margin:0%;
+    font-size: 5.9375rem;
+  }
+}
